@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        
         * {
             font-family: 'Inter', sans-serif;
         }
@@ -17,9 +17,7 @@
         }
         
         .tech-grid {
-            background-image: 
-                linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px);
+            background-image: linear-gradient(rgba(255, 255, 255, .1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .1) 1px, transparent 1px);
             background-size: 20px 20px;
         }
         
@@ -33,7 +31,7 @@
         
         .card-hover:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         }
         
         .typing-animation {
@@ -42,8 +40,14 @@
         }
         
         @keyframes blink {
-            0%, 50% { border-color: transparent; }
-            51%, 100% { border-color: #667eea; }
+            0%,
+            50% {
+                border-color: transparent;
+            }
+            51%,
+            100% {
+                border-color: #667eea;
+            }
         }
         
         .fade-in {
@@ -92,6 +96,7 @@
         }
     </style>
 </head>
+
 <body class="bg-gray-900 text-white">
     <!-- Navigation -->
     <nav class="fixed top-0 w-full bg-gray-900/90 backdrop-blur-sm z-50 border-b border-gray-800">
@@ -138,9 +143,8 @@
         <div class="absolute inset-0 bg-black/20"></div>
         <div class="text-center z-10 px-4">
             <div class="mb-8">
-                <svg class="w-32 h-32 mx-auto mb-6 text-white/80" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                </svg>
+                <!-- Replace SVG with your image -->
+                <img src="Mostafa Adam.jpeg" alt="Mostafa Adam" class="w-40 h-40 mx-auto mb-6 rounded-full shadow-lg border-4 border-white/20 object-cover">
             </div>
             <h1 class="text-5xl md:text-7xl font-bold mb-4">Mostafa Adam</h1>
             <div class="text-xl md:text-2xl text-blue-200 mb-8">
@@ -150,15 +154,16 @@
                 DSAI Student passionate about Computer Vision, Machine Learning, and building intelligent solutions
             </p>
             <button onclick="scrollToSection('about')" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full text-lg font-semibold transition-all glow">
-                Explore My Work
-            </button>
+            Explore My Work
+        </button>
         </div>
-        
+
         <!-- Floating Elements -->
         <div class="absolute top-20 left-10 w-4 h-4 bg-blue-400 rounded-full animate-pulse"></div>
         <div class="absolute top-40 right-20 w-6 h-6 bg-purple-400 rounded-full animate-bounce"></div>
         <div class="absolute bottom-20 left-20 w-3 h-3 bg-green-400 rounded-full animate-ping"></div>
     </section>
+
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-gray-800">
@@ -175,10 +180,12 @@
                 <div class="fade-in">
                     <h3 class="text-2xl font-semibold mb-6 text-blue-400">Passionate AI & Software Engineer</h3>
                     <p class="text-gray-300 mb-6 leading-relaxed">
-                        I'm a dedicated Data Science and Artificial Intelligence student at the Faculty of Computer Science and Artificial Intelligence, with a strong passion for developing intelligent solutions that solve real-world problems. My expertise spans from computer vision and machine learning to full-stack web development.
+                        I'm a dedicated Data Science and Artificial Intelligence student at the Faculty of Computer Science and Artificial Intelligence, with a strong passion for developing intelligent solutions that solve real-world problems. My expertise spans from computer
+                        vision and machine learning to full-stack web development.
                     </p>
                     <p class="text-gray-300 mb-6 leading-relaxed">
-                        Currently working as a Coding Instructor at iSchool, I enjoy sharing knowledge and helping others discover the power of programming. My projects range from advanced computer vision systems to full-stack applications, always focusing on practical implementation and real-world impact.
+                        Currently working as a Coding Instructor at iSchool, I enjoy sharing knowledge and helping others discover the power of programming. My projects range from advanced computer vision systems to full-stack applications, always focusing on practical implementation
+                        and real-world impact.
                     </p>
                     <div class="flex flex-wrap gap-4">
                         <span class="bg-blue-600/20 text-blue-400 px-4 py-2 rounded-full">Computer Vision</span>
@@ -263,7 +270,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="fade-in">
                     <h3 class="text-2xl font-semibold mb-8 text-purple-400">Frameworks & Tools</h3>
                     <div class="grid grid-cols-2 gap-4">
@@ -350,7 +357,7 @@
                         <li>• Custom CNN Models</li>
                     </ul>
                 </div>
-                
+
                 <div class="bg-gray-900 p-8 rounded-xl card-hover fade-in text-center">
                     <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -366,7 +373,7 @@
                         <li>• Docker & CI/CD</li>
                     </ul>
                 </div>
-                
+
                 <div class="bg-gray-900 p-8 rounded-xl card-hover fade-in text-center">
                     <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -409,7 +416,7 @@
                         <button class="text-blue-400 hover:text-blue-300 font-semibold">View Project →</button>
                     </div>
                 </div>
-                
+
                 <div class="bg-gray-800 rounded-xl overflow-hidden card-hover fade-in">
                     <div class="h-48 bg-gradient-to-br from-green-500 to-blue-600 flex items-center justify-center">
                         <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -428,7 +435,7 @@
                         <button class="text-green-400 hover:text-green-300 font-semibold">View Project →</button>
                     </div>
                 </div>
-                
+
                 <div class="bg-gray-800 rounded-xl overflow-hidden card-hover fade-in">
                     <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
                         <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -522,7 +529,7 @@
                     <h3 class="text-lg font-semibold text-yellow-400 mb-2">High Accuracy Models</h3>
                     <p class="text-gray-400 text-sm">98.9% accuracy in drone detection</p>
                 </div>
-                
+
                 <div class="text-center fade-in">
                     <div class="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -532,7 +539,7 @@
                     <h3 class="text-lg font-semibold text-blue-400 mb-2">Teaching Excellence</h3>
                     <p class="text-gray-400 text-sm">Successfully taught programming to 50+ students</p>
                 </div>
-                
+
                 <div class="text-center fade-in">
                     <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -542,7 +549,7 @@
                     <h3 class="text-lg font-semibold text-green-400 mb-2">Project Portfolio</h3>
                     <p class="text-gray-400 text-sm">7+ major AI/ML projects completed</p>
                 </div>
-                
+
                 <div class="text-center fade-in">
                     <div class="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -553,7 +560,7 @@
                     <p class="text-gray-400 text-sm">Proficient in 10+ technologies</p>
                 </div>
             </div>
-            
+
             <div class="mt-16 bg-gray-900 p-8 rounded-xl fade-in">
                 <h3 class="text-2xl font-semibold text-center mb-8 text-blue-400">Recent Highlights</h3>
                 <div class="grid md:grid-cols-3 gap-6">
@@ -584,7 +591,7 @@
                     <p class="text-gray-300 mb-8 leading-relaxed">
                         Ready to bring your AI and software development ideas to life? I'm passionate about creating innovative solutions that make a real impact. Let's discuss your project and explore how we can work together.
                     </p>
-                    
+
                     <div class="space-y-4">
                         <div class="flex items-center">
                             <svg class="w-6 h-6 text-blue-400 mr-4" fill="currentColor" viewBox="0 0 24 24">
@@ -605,7 +612,7 @@
                             <span class="text-gray-300">Giza, Egypt</span>
                         </div>
                     </div>
-                    
+
                     <div class="flex space-x-4 mt-8">
                         <a href="https://linkedin.com/in/mostafa-adam" target="_blank" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
                             <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -619,7 +626,7 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="fade-in">
                     <form class="space-y-6" onsubmit="handleSubmit(event)">
                         <div>
@@ -658,7 +665,8 @@
         <div class="max-w-4xl mx-auto px-4 fade-in">
             <h2 class="text-4xl font-bold mb-8 text-blue-400">Thank You</h2>
             <p class="text-xl text-gray-300 mb-8 leading-relaxed">
-                Thank you for exploring my portfolio! As a passionate DSAI student and coding instructor, I'm always excited to work on innovative projects that push the boundaries of AI and technology. Whether you need computer vision solutions, full-stack development, or want to learn programming, I'm here to help bring your ideas to life.
+                Thank you for exploring my portfolio! As a passionate DSAI student and coding instructor, I'm always excited to work on innovative projects that push the boundaries of AI and technology. Whether you need computer vision solutions, full-stack development,
+                or want to learn programming, I'm here to help bring your ideas to life.
             </p>
             <p class="text-lg text-gray-400 mb-8">
                 Let's build intelligent solutions together and make a positive impact through technology.
@@ -685,7 +693,7 @@
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
@@ -711,7 +719,7 @@
 
         function typeWriter() {
             const currentText = texts[textIndex];
-            
+
             if (isDeleting) {
                 typingText.textContent = currentText.substring(0, charIndex - 1);
                 charIndex--;
@@ -773,16 +781,16 @@
         // Form submission
         function handleSubmit(event) {
             event.preventDefault();
-            
+
             // Show success message
             const form = event.target;
             const button = form.querySelector('button[type="submit"]');
             const originalText = button.textContent;
-            
+
             button.textContent = 'Message Sent!';
             button.classList.add('bg-green-600');
             button.classList.remove('bg-blue-600');
-            
+
             setTimeout(() => {
                 button.textContent = originalText;
                 button.classList.remove('bg-green-600');
@@ -793,7 +801,7 @@
 
         // Smooth scroll for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
@@ -809,7 +817,7 @@
         window.addEventListener('scroll', () => {
             const sections = document.querySelectorAll('section[id]');
             const navLinks = document.querySelectorAll('.nav-link');
-            
+
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
@@ -827,5 +835,38 @@
             });
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97ff36030289aead',t:'MTc1ODAxMzYxOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+    <script>
+        (function() {
+            function c() {
+                var b = a.contentDocument || a.contentWindow.document;
+                if (b) {
+                    var d = b.createElement('script');
+                    d.innerHTML = "window.__CF$cv$params={r:'97ff36030289aead',t:'MTc1ODAxMzYxOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+                    b.getElementsByTagName('head')[0].appendChild(d)
+                }
+            }
+            if (document.body) {
+                var a = document.createElement('iframe');
+                a.height = 1;
+                a.width = 1;
+                a.style.position = 'absolute';
+                a.style.top = 0;
+                a.style.left = 0;
+                a.style.border = 'none';
+                a.style.visibility = 'hidden';
+                document.body.appendChild(a);
+                if ('loading' !== document.readyState) c();
+                else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c);
+                else {
+                    var e = document.onreadystatechange || function() {};
+                    document.onreadystatechange = function(b) {
+                        e(b);
+                        'loading' !== document.readyState && (document.onreadystatechange = e, c())
+                    }
+                }
+            }
+        })();
+    </script>
+</body>
+
 </html>
